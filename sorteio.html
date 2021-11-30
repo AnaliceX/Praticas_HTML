@@ -1,0 +1,33 @@
+<script>
+
+                function mostra(frase){
+                    document.write(frase)
+                }
+
+                var n1 = parseFloat(prompt("Digite um número de 0 a 3"));
+
+                var n2 = parseFloat(prompt("Digite um número de 0 a 3"));
+
+                var sorteio = Math.round(Math.random()*10);
+
+                alert("O número sorteado foi..." + sorteio );
+
+                
+
+                if(sorteio == n1 && sorteio == n2){
+                    alert("Vocês empataram");
+                }
+
+                else if(sorteio != n1 && sorteio != n2){
+                    alert("Vocês erraram.");
+                }
+
+
+
+                else if(n1 == sorteio){
+                    mostra("n1 ganhou");
+                }else{
+                    mostra("n2 ganhou");
+                }
+
+            </script>
